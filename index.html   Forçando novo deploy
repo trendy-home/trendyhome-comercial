@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrendyHome Comercial - Em Breve</title>
+  <title>TrendyHome Comercial</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
   <!-- Meta Pixel Code -->
@@ -34,63 +34,70 @@
 
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #4A00E0, #8E2DE2, #3E8EDE);
+      background: linear-gradient(135deg, #2c003e, #3a1a84, #2e5eaa);
       color: white;
+      text-align: center;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .logo img {
+      width: 200px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin-bottom: 40px;
     }
 
-    .logo {
-      font-size: 2rem;
-      font-weight: bold;
-      background: -webkit-linear-gradient(#ffffff, #b3b3ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
     }
 
-    .loader {
-      margin-top: 2rem;
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #ffffff;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    .whatsapp-button img {
+      width: 60px;
+      height: 60px;
     }
 
     footer {
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       font-size: 0.9rem;
-      color: #ddd;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="logo">TrendyHome Comercial</div>
-  <h1>Em Breve Novidades Incríveis</h1>
-  <h2>Estamos preparando algo especial para você</h2>
-  <div class="loader"></div>
-  <footer>&copy; 2025 TrendyHome. Todos os direitos reservados.</footer>
+
+  <div class="logo">
+    <img src="logo.png" alt="TrendyHome Logo">
+  </div>
+
+  <h1>Novidades estão a caminho!</h1>
+  <p>Estamos preparando um espaço completo para você com ofertas, serviços e soluções inovadoras. Fique de olho!</p>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/5511967280478?text=Olá,%20quero%20ficar%20por%20dentro%20das%20novidades%20da%20TrendyHome!" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <footer>&copy; 2025 TrendyHome Comercial. Todos os direitos reservados.</footer>
+
 </body>
 </html>
+
